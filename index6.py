@@ -17,5 +17,7 @@ total = sum(valid_numbers)
 # Calculate the average of the valid numbers
 average = total / len(valid_numbers) if valid_numbers else 0
 
-valid_numbers, total, average
-
+# Printing the results
+print("Valid Numbers:", valid_numbers)
+print("Total:", total)
+print("Average:", average)
