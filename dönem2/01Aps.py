@@ -5,18 +5,15 @@ result = cube(4)  # cube fonksiyonuna 4 değerini gönderiyoruz ve sonucu alıyo
 print(result)  # Sonucu ekrana yazdırıyoruz
 
 
-class TemperatureConverter:  # Sıcaklık dönüşümleri için bir sınıf oluşturduk
-    @staticmethod
-    def celsiusToFahrenheit(celsius):  # Celsius'tan Fahrenheit'a çeviren metod
-        return (9.0 / 5) * celsius + 32  # Formülü uyguluyoruz
+def celsiusToFahrenheit(celsius):  # Celsius'tan Fahrenheit'a çeviren fonksiyon
+    return (9.0 / 5) * celsius + 32  # Formülü uyguluyoruz
 
-    @staticmethod
-    def fahrenheitToCelsius(fahrenheit):  # Fahrenheit'tan Celsius'a çeviren metod
-        return (5.0 / 9) * (fahrenheit - 32)  # Formülü uyguluyoruz
+def fahrenheitToCelsius(fahrenheit):  # Fahrenheit'tan Celsius'a çeviren fonksiyon
+    return (5.0 / 9) * (fahrenheit - 32)  # Formülü uyguluyoruz
 
-# Test programı
-print("Celsius -> Fahrenheit | Fahrenheit -> Celsius")
-print(f"40.0 -> {TemperatureConverter.celsiusToFahrenheit(40.0):.2f} | 120.0 -> {TemperatureConverter.fahrenheitToCelsius(120.0):.2f}")
+# Test edelim
+print("40°C ->", celsiusToFahrenheit(40), "°F")  # 40 Celsius'u Fahrenheit'a çevir
+print("120°F ->", fahrenheitToCelsius(120), "°C")  # 120 Fahrenheit'ı Celsius'a çevir
 
 
 def max(a, b):  # max isimli fonksiyon, iki parametre alıyor
